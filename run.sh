@@ -43,7 +43,7 @@ cp guests/lrtos/lrtos.bin ./bin
 cp guests/echo/echo.bin ./bin
 cp guests/uboot/uboot.bin ./bin
 cp guests/freertos/freertos.bin ./bin
-echo linux | sudo modprobe nbd max_part=8
+echo linux | sudo -S modprobe nbd max_part=8
     ./scripts/create_sd.sh ./bin/avisor.img ./bin/lrtos.bin ./bin/echo.bin ./bin/uboot.bin ./bin/freertos.bin
     return $?
 }

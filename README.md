@@ -7,6 +7,11 @@
 **Compilation and QEMU Simulation**
 
 ```
+./run.sh build          // build ypervisor and guest vm
+./run.sh img            // create qemu img
+./run.sh run            // run qemu
+./run.sh                // all above
+
 ./scripts/demo.sh		// Compile and run the demo
 ./scripts/clean.sh		// Clean the project
 ```
